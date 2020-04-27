@@ -9,6 +9,6 @@ puts "----------"
 @store2 = Store.where(id: 2)
 p @store1
 
-@store1.update(1, name: "Lee's Used Jeans")
+Store.update(@store1, name: "Lee's")
 
 p @store1
