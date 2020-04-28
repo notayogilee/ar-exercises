@@ -5,10 +5,10 @@ puts "Exercise 2"
 puts "----------"
 
 
-@store1 = Store.where(id: 1)
-@store2 = Store.where(id: 2)
+@store1 = Store.find_by(id: 1)
+@store2 = Store.find_by(id: 2)
 p @store1
 
-Store.update(@store1, name: "Lee's")
+@store1.update(name: "Lee's")
 
 p @store1
