@@ -8,5 +8,9 @@ require_relative './exercise_6'
 
 puts "Exercise 7"
 puts "----------"
+print "> "
+user_store_name = $stdin.gets.chomp
 
-# Your code goes here ...
+new_store = Store.create(name: "#{user_store_name}", annual_revenue: nil, mens_apparel:nil, womens_apparel:nil )
+
+puts new_store.errors.messages
